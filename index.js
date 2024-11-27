@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let envelope = document.getElementById('envelope');
     let typingEffectInstance = null; // Store the typing effect instance.
     let heart = document.querySelector('.line3 span');
+    window.addEventListener('click',()=>{
+        document.getElementById("playAudio").play();
+    });
 
     // Add event listeners for clicks
     envelope.addEventListener('click', openEnvelope);
